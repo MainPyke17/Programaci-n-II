@@ -1,0 +1,34 @@
+@api = http://localhost:3000/detalle_pedidos
+
+// obtener la tabla detalle_pedidos
+GET {{api}}
+
+### cargar un nuevo detalle_pedidos
+
+POST {{api}}
+Content-Type: application/json 
+
+{
+    "id_pedido": ,
+    "id_producto": ,
+    "cantidad": ,
+    "precio_real": ,
+}
+
+### obtener un detalle_pedidos
+GET {{api}}/
+
+### eliminar un detalle_pedidos
+DELETE {{api}}/
+
+### obtener todos los detalle_pedidos
+GET {{api}}/count
+
+### actualizar un detalle_pedidos
+PUT {{api}}/
+
+Content-Type: application/json 
+{
+    "cantidad": ,
+    "precio_real": ,
+}

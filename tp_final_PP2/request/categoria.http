@@ -1,0 +1,32 @@
+@api = http://localhost:3000/categorias
+
+// obtener todas las categorias
+GET {{api}}
+
+### cargar una nueva categoria
+
+POST {{api}}
+Content-Type: application/json 
+
+{
+    "id_categoria": ,
+    "descripcion_categoria": ,
+}
+
+### obtener una categorias
+GET {{api}}/
+
+### eliminar una categorias
+DELETE {{api}}/
+
+### obtener todos las categorias
+GET {{api}}/count
+
+### actualizar una categoria
+PUT {{api}}/
+
+Content-Type: application/json 
+{
+    "descripcion_categoria": ,
+}
+

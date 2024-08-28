@@ -1,0 +1,32 @@
+@api = http://localhost:3000/pedidos
+
+GET {{api}}
+
+###
+
+POST {{api}}
+Content-Type: application/json 
+
+{
+    "id_pedido": ,
+    "id_mesa": ,
+    "fecha_hora": ,
+}
+
+### obtener un pedido
+GET {{api}}/
+
+### eliminar un pedido
+DELETE {{api}}/
+
+### obtener todos los pedidos
+GET {{api}}/count
+
+### actualizar un pedido
+PUT {{api}}/
+
+Content-Type: application/json 
+{
+    "id_mesa": "",
+    "fecha_hora": "",
+}

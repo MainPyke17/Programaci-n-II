@@ -1,0 +1,35 @@
+@api = http://localhost:3000/products
+
+// obtener la tabla completa de productos
+GET {{api}}
+
+### cargar un nuevo producto
+
+POST {{api}}
+Content-Type: application/json 
+
+{
+    "id_producto": 4,
+    "precio": 4500,
+    "descripcion": "Sandwich arabe JyQ",
+    "id_categoria": 1
+}
+
+### obtener un producto
+GET {{api}}/1
+
+### eliminar un producto
+DELETE {{api}}/
+
+### obtener todos los productos
+GET {{api}}/count
+
+### actualizar un producto
+PUT {{api}}/
+
+Content-Type: application/json 
+{
+    "precio": "",
+    "descripcion": "",
+    "categoria": "",
+}

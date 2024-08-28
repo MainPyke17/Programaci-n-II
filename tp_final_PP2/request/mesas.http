@@ -1,0 +1,31 @@
+@api = http://localhost:3000/mesas
+
+//obtener la tabla mesas
+GET {{api}}
+
+### Crear una mesa
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "id_mesa": 1,
+    "comensales": 2
+}
+
+### obtener una mesa
+GET {{api}}/
+
+### eliminar una mesa
+DELETE {{api}}/
+
+### obtener todos las mesas
+GET {{api}}/count
+
+### actualizar una mesa 
+PUT {{api}}/
+
+Content-Type: application/json 
+{
+    "comensales": "",
+}
