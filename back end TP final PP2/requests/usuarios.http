@@ -1,0 +1,32 @@
+@api = http://localhost:3001/usuarios 
+
+### obtener la tabla usuarios 
+GET {{api}}
+
+### cargar un nuevo usuario
+POST {{api}}
+Content-Type: application/json
+
+{
+    "gmail": "agustinbressan9@gmail.com",
+    "contrasena": "MainPyke17"
+}
+
+### obtener usuario por ID 
+GET {{api}}/1
+
+### eliminar un usuario por ID
+DELETE {{api}}/
+
+### obtener el numero de usuarios que existen en la base de datos
+GET {{api}}/count
+
+### Actualizar un usuario por ID
+PUT {{api}}/
+Content-Type: application/json
+
+{
+    "gmail": "agustinbressan9@gmail.com",
+    "contrasena": "MainPyke17"
+}
+

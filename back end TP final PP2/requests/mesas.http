@@ -1,0 +1,30 @@
+@api = http://localhost:3001/mesas
+
+### crear una peticion a la base de datos para obtener la tabla mesas
+GET {{api}}
+
+### cargar una nueva mesa  
+POST {{api}}
+Content-Type: application/json
+
+{
+    "id_mesa": 4,
+    "comensales": 2 
+}
+
+### obetener una mesa por id 
+GET {{api}}/1
+
+### eliminar una mesa por Id 
+DELETE {{api}}/
+
+### obtener el numero de mesas que existen en la base de datos
+GET {{api}}/count
+
+### actualizar una mesa
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "comensales": 1 
+}

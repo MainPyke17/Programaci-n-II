@@ -1,0 +1,34 @@
+@api = http://localhost:3001/products
+
+### crear una peticion a la base de datos para obtener la tabla products
+GET {{api}}
+
+### cargar un nuevo proucto 
+POST {{api}}
+Content-Type: application/json
+
+{
+    "id_producto": 5,
+    "precio": 300,
+    "descripcion": "medialuna salada",
+    "id_categoria": 1
+}
+
+### obetener un producto por id 
+GET {{api}}/8
+
+### eliminar un dato por Id 
+DELETE {{api}}/7
+
+### obtener el numero de productos que existen en la base de datos
+GET {{api}}/count
+
+### actualizar un producto
+PUT {{api}}/7
+Content-Type: application/json
+
+{
+    "precio": 900,
+    "descripcion": "Prod actualizado",
+    "id_categoria": 1
+}
