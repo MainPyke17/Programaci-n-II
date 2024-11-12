@@ -1,0 +1,32 @@
+@api = http://localhost:3001/pedidos
+
+### crear una peticion a la base de datos para obtener la tabla pedidos
+GET {{api}}
+
+### cargar un nuevo pedido 
+POST {{api}}
+Content-Type: application/json
+
+{
+    "id_pedido": 2,
+    "id_mesa": 2,
+    "fecha_hora": "2024-08-20"
+}
+
+### obetener un pedido por id 
+GET {{api}}/1
+
+### eliminar un pedido por Id 
+DELETE {{api}}/
+
+### obtener el numero de pedidos que existen en la base de datos
+GET {{api}}/count
+
+### actualizar un pedido
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "id_mesa": 2,
+    "fecha_hora": "09/13/2024"
+}

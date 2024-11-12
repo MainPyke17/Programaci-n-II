@@ -1,0 +1,30 @@
+@api = http://localhost:3001/categorias
+
+### crear una peticion a la base de datos para obtener la tabla categoria
+GET {{api}}
+
+### cargar una nueva categoria
+POST {{api}}
+Content-Type: application/json
+
+{
+    "id_categoria": ,
+    "descripcion_categoria": ""
+}
+
+### obetener una categoria por id 
+GET {{api}}/1
+
+### eliminar una categoria por Id 
+DELETE {{api}}/
+
+### obtener el numero de categoria que existen en la base de datos
+GET {{api}}/count
+
+### actualizar una categoria
+PUT {{api}}/5
+Content-Type: application/json
+
+{
+    "descripcion_categoria": "categoria actualizada"
+}
